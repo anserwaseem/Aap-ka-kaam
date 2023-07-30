@@ -7,9 +7,23 @@
     <title>Aap Ka Kaam</title>
   </head>
   <body>
-    <div id="root"></div>
     <p id="info"></p>
+    <div id="root"></div>
   </body>
   <!-- You can also require other files to run in this process -->
   <!-- <script src="./renderer.js"></script> -->
+  <!-- <script>
+    const sqlite3 = require("sqlite3").verbose();
+    const db = new sqlite3.Database("./db.db");
+    db.serialize(() => {
+      db.each("select * from TestTable", (err, row) => {
+        if (err) {
+          console.log("db.each error: ", err);
+        } else {
+          console.log("db.each row: ", row);
+        }
+      });
+    });
+    db.close();
+  </script> -->
 </html>
